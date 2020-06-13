@@ -1,0 +1,32 @@
+package oecm2;
+
+class Chambar {
+	
+}
+public class Weights extends Chambar {
+	int weight;
+	String colour;
+	
+
+	public Weights(int w,String c) {
+		weight =w;
+		colour=c;
+	}
+	public  boolean equals(Object a) 
+	{
+		Weights w=a;
+		return weight==w.weight;
+	}
+	public static void main(String[] args) {
+		Weights a1=new Weights(20,"black");
+		Weights a2=new Weights(20,"white");
+		Weights a=new Weights(30,"pink");
+		Chambar a4=new Weights(30,"brown");
+		if(a1.equals(a4))
+			System.out.println("Both the dumbels are having same weights ");
+		else
+			System.out.println("both are different");
+
+	}
+
+}
